@@ -1,0 +1,94 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  
+  /* Score Display */
+  span {
+    color: #ff0000;  /* Red color for score */
+    font-size: 1.5em;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Table Header */
+  th {
+    background-color: #4CAF50;  /* Green header background */
+    color: white;
+    text-align: left;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Table Data */
+  td {
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Table Row Hover Effect */
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Conditional Background Color for Rows */
+  tr[style*="background: rgb(255, 0, 0)"] {
+    background-color: #f8d7da;  /* Light red for incorrect answers */
+  }
+  
+  tr[style*="background: rgb(0, 255, 0)"] {
+    background-color: #d4edda;  /* Light green for correct answers */
+  }
+  
+  /* Button Styling */
+  input[type="button"] {
+    background-color: #4CAF50;  /* Green background */
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+  }
+  
+  input[type="button"]:hover {
+    background-color: #45a049;  /* Darker green on hover */
+    transform: translateY(-2px);  /* Slight lift effect */
+  }
+  
+  input[type="button"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  }
+  

@@ -1,0 +1,68 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('C:/Users/Administrator/Documents/PROJECTS/ANGULARPROJECT/onlineexam/src/assets/backgrounds/reisterback.avif') no-repeat center center fixed; /* Use the uploaded image as background */
+  background-size: cover; /* Make the image cover the entire background */
+  color: #fff; /* White text for contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+}
+
+/* Form Container */
+form {
+  background-color:transparent; /* Semi-transparent black background */
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  width: 100%;
+  max-width: 400px; /* Limit the form width */
+}
+
+/* Input Fields */
+form input[type="text"],
+form input[type="password"],
+form input[type="number"],
+form input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff; /* White background for input fields */
+}
+
+/* Button */
+form input[type="button"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50; /* Green background */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form input[type="button"]:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Error or Success Message */
+span {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #FFD700; /* Gold color for the message */
+}

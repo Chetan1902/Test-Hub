@@ -1,0 +1,23 @@
+
+
+<body>
+
+	<form>
+	
+		<input type="text"  name="username" [(ngModel)]="user.username" placeholder="Enter Username ">
+		
+		<input type="password"  name="password" [(ngModel)]="user.password" placeholder="Enter Password">
+		
+		<input type="number"  name="mobno" [(ngModel)]="user.mobno" placeholder="Enter Mobno">
+		
+		<input type="email"  name="emailid" [(ngModel)]="user.emailid" placeholder="Enter EmailId">
+				
+		<br><br>
+
+		<input type="button"  value="register" (click)="saveUser()">
+		
+	</form>
+
+	<span>{{message}}</span>
+
+</body>

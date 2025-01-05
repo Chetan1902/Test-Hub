@@ -1,0 +1,53 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; 
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+  } */
+  
+  /* Navigation Bar */
+  nav {
+    background-color:darkslategray; /* Green background for the navbar */
+    padding: 10px 20px; /* Add spacing inside the navbar */
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  }
+  
+  /* Links in the Navigation Bar */
+  nav a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text */
+    margin: 0 15px; /* Space between links */
+    font-size: 18px; /* Larger font size */
+    font-weight: bold;
+    padding: 8px 16px; /* Add padding around links */
+    border-radius: 5px; /* Rounded edges */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Hover Effect for Links */
+  nav a:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  /* Router Outlet Section */
+ 
+  
+  /* Spacing Between Elements */
+  br {
+    display: block;
+    margin: 10px 0;
+  }
+  

@@ -1,0 +1,39 @@
+
+<body>
+   
+    <span style="color: red;font-size: large;">Time Left For this question: {{durationMessage}}</span>
+
+    <br><br>
+
+    <span style="color: green;font-size: large;">{{message}}</span>
+
+    <br><br>
+
+    
+    <br><br>
+
+<form>
+    
+    <input type="text"  name="qno" [(ngModel)]="question.qno" readonly><br><br>
+    <input type="text"   name="qtext" [(ngModel)]="question.qtext" size="100px" style="padding: 20px;" readonly><br><br>
+    
+    <br><br>
+  
+    <input  [checked]="isChecked(question.op1)" name="options" type="radio"  (change)="saveAnswer()" value="{{question.op1}}" [(ngModel)]="submittedAnswer" class="css-checkbox" name="radioModel" [(ngModel)]="selected">   <span [style.color]="getColor(question.op1)">{{question.op1}}</span><br><br>
+    <input  [checked]="isChecked(question.op2)" name="options" type="radio"  (change)="saveAnswer()" value="{{question.op2}}" [(ngModel)]="submittedAnswer" class="css-checkbox" name="radioModel" [(ngModel)]="selected">   <span [style.color]="getColor(question.op2)">{{question.op2}}</span><br><br>
+    <input  [checked]="isChecked(question.op3)" name="options" type="radio"  (change)="saveAnswer()" value="{{question.op3}}" [(ngModel)]="submittedAnswer" class="css-checkbox" name="radioModel" [(ngModel)]="selected">   <span [style.color]="getColor(question.op3)">{{question.op3}}</span><br><br>
+    <input  [checked]="isChecked(question.op4)" name="options" type="radio"  (change)="saveAnswer()" value="{{question.op4}}" [(ngModel)]="submittedAnswer" class="css-checkbox" name="radioModel" [(ngModel)]="selected">   <span [style.color]="getColor(question.op4)">{{question.op4}}</span><br><br>
+   
+    <input  type="hidden" name="answer" [(ngModel)]="question.answer"><br><br>
+
+    <input type="button" value="next" (click)="nextQuestion()">
+    <input type="button" value="previous" (click)="previousQuestion()">
+    <input type="button" value="endexam" (click)="endexam()">
+
+
+</form>
+
+
+
+</body>
+
