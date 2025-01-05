@@ -1,1 +1,1 @@
-# Test-Hub
+Designed and developed a web-based online examination platform with user-friendly interfaces and seamless functionality. Implemented REST APIs for secure data exchange, enabling features like exam management, user authentication, and real-time results. Built a responsive front-end with Angular and optimized back-end operations using Python
